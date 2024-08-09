@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.container img {
+  align-items: center;
+  margin-left: 10px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.container img:hover {
+  opacity: 0;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar h1 {
+  text-align: left;
+}
+
+.navbar .navbar-links {
+  text-align: right;
+}
+
+.navbar-center-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.fa-github {
+  font-size: 1.5rem;
+}
+/* Utility Classes */
