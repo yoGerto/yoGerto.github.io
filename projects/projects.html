@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/images/plink-cat-plink.gif" />
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $.get("/navbar.html", function (data) {
+        $("#nav-placeholder").replaceWith(data);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="nav-placeholder"></div>
+    </div>
+    <div class="projects-body">
+      <div class="current-projects">
+        My Current Projects are:
+        <ul>
+          <li>Baseball Bat VRChat World</li>
+          <li>Utility scripts for developing VRChat Worlds</li>
+          <li>This website :)</li>
+        </ul>
+        <br />
+      </div>
+      <div class="developing-skills">
+        <div>
+          The programing skills I am trying to develop are:
+          <ul>
+            <li>C#</li>
+            <ul class="nested-list">
+              <li>
+                I hope by developing the scripts needed for the VRChat/Unity
+                related projects that I will be able to develop my C# knowledge
+              </li>
+              <li>
+                But I would also like to develop a Desktop application, perhaps
+                a simple PC temperature measuring program would be nice?
+              </li>
+            </ul>
+
+            <li>HTML (HyperText Markup Language)</li>
+            <li>CSS (Cascading Style Sheets)</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <br />
+      </div>
+      <div class="experience-i-have">
+        <div>
+          The programming languages I already have experience using are:
+          <ul>
+            <li>Python</li>
+            <ul class="nested-list">
+              <li>
+                Used Python during my first year at University, where I was able
+                to enjoy how easy Python was to use as a beginner
+              </li>
+              <li>
+                Also used Python during my Final Year Project at University. For
+                this project I designed and created a prototype for a 'Dynamic
+                Tannoy' system, which can adjust the sound from the speakers
+                based on the volume level received at the microphone.
+              </li>
+              <ul class="nested-list">
+                <li>
+                  The final product that was created at the end admittedly
+                  wasn't very good...
+                </li>
+                <li>
+                  I believe that the core idea behind this product isn't very
+                  practical and wouldn't make a good product in the real world,
+                  due to the costs of all of the parts needed to make it work
+                  for such a minimal benefit.
+                </li>
+              </ul>
+            </ul>
+            <li>Embedded C</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

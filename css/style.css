@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 body {
@@ -13,9 +12,6 @@ h1 {
   text-align: center;
 }
 
-ul {
-  list-style: none;
-}
 .container {
   margin-left: 10px;
   margin-top: 10px;
@@ -32,18 +28,25 @@ ul {
   opacity: 0;
 }
 
+/* Navbar */
+
 .navbar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   text-align: center;
+  background-color: burlywood;
+}
+
+.navbar ul {
+  list-style: none;
 }
 
 .navbar h1 {
   text-align: left;
 }
 
-.navbar .navbar-links {
+.navbar .navbar-rightedge-links {
   text-align: right;
 }
 
@@ -51,9 +54,62 @@ ul {
   display: flex;
   gap: 10px;
   justify-content: center;
+  text-decoration: none;
+}
+
+.navbar-center-links a {
+  text-decoration: none;
+}
+
+.navbar a {
+  color: #333;
+}
+
+.navbar > * {
+  color: #333;
+  padding: 0 10px;
 }
 
 .fa-github {
   font-size: 1.5rem;
 }
+
+.projects-body {
+  margin-left: 50px;
+}
+
+.nested-list {
+  padding-left: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content.active {
+  display: block;
+}
+
 /* Utility Classes */
+
+.color-333 {
+  color: #333;
+}

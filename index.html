@@ -20,15 +20,45 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="images/plink-cat-plink.gif" />
     <script src="//code.jquery.com/jquery.min.js"></script>
-    <script>
+    <!-- <script>
       $.get("navbar.html", function (data) {
         $("#nav-placeholder").replaceWith(data);
       });
-    </script>
+    </script> -->
+    <script src="js/main.js"></script>
   </head>
   <body>
     <div class="container">
-      <div id="nav-placeholder"></div>
+      <!-- Navbar -->
+      <!-- I want to use the querySelector function in Javascript to make a dropdown box appear on one of the buttons -->
+      <!-- But I don't think it works when you replace data, maybe because the DOM doesn't have access to the most up to date information -->
+      <!-- Going to try the plain text hardcoded into the document rather than using replaceWith -->
+      <!-- I'm sure there's a way to do what I want here, I might just not have a deep enough understanding of HTML and JavaScript yet! -->
+      <nav class="navbar">
+        <h1 class="website-header">
+          Conor Denby<img src="images/plink-cat-plink.gif" alt="plink" />
+        </h1>
+        <div class="navbar-center-links">
+          <ul class="navbar-center-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="./stuffthatilike.html">About Me</a></li>
+            <li><a href="/projects/projects.html">Projects</a></li>
+            <li>
+              <p class="dropdown">Contact</p>
+              <div class="dropdown-content">
+                Email: conorfdenby@gmail.com
+                <br />
+                Phone: 07858667644
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-rightedge-links">
+          <a href="https://github.com/yoGerto"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </nav>
     </div>
     <div>
       Hello! And welcome to my website. These may be humble beginnings but I am
